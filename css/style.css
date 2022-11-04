@@ -76,7 +76,6 @@ html {
 
 .header {
     display: flex;
-    box-sizing: border-box;
     align-content: center;
     align-items: stretch;
     max-width: 1249px;
@@ -84,36 +83,29 @@ html {
     margin: 0 auto;
     margin-top: 29px;
     min-height: 89px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding: 0px 32% 0px 28%;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navigation {
-    display: flex;
-    flex-grow: 1; 
+    box-sizing: content-box;
+    flex-basis: content;
+    display: flex; 
     width: 100%;
     min-height: 89px;
     padding: 0px;
-    margin: 0px;
+    padding-right: 8%;
+    margin: 0px auto;
 }
 
 .menu {
-    width: 100%;
+    box-sizing: content-box;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     min-height: 89px;
-    margin: 0;
+    margin: 0px;
     padding: 0;
-}
-
-@media (min-width: 1300px) {
-    .menu {
-        flex-wrap: nowrap;
-    }
 }
 
 .menu > li {
