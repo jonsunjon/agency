@@ -332,11 +332,13 @@ html {
 .h2_provide {
     max-width: 523px;
     margin-top: -14px;
+    margin-bottom: 51px;
     line-height: 1.31;
     letter-spacing: 0.422159px;
 }
 
 .text_provide {
+    margin: 0px;
     margin-bottom: 64px;
     max-width: 539px;
 }
@@ -352,18 +354,37 @@ html {
 
 .main__sect_services {
     gap: 20px;
+    row-gap: 53px;
     justify-content: flex-end;
+    align-content: flex-start;
     flex-shrink: 0;
     flex-wrap: wrap;
     max-width: 620px;
+    min-height: 589px;
     margin: 0px;
     padding: 0px;
 }
 
 .main__service {
+    height: max-content;
     width: 290px;
     margin: 0px;
-    margin-bottom: 53px;
+}
+
+.main__service_Management::before {
+    content: url('../img/Management.svg');
+}
+
+.main__service_UI::before {
+    content: url('../img/UI.svg');
+}
+
+.main__service_Logo::before {
+    content: url('../img/Logo.svg');
+}
+
+.main__service_Animation::before {
+    content: url('../img/Animation.svg');
 }
 
 .h3 {
@@ -371,6 +392,16 @@ html {
     font-style: normal;
     font-size: 24px;
     font-weight: 600;
+}
+
+.h3_service {
+    margin: 0px;
+    margin-top: 31px;
+    margin-bottom: 13px;
+}
+
+.text_service {
+    margin: 0px;
 }
 
 @media (max-width: 1300px) {
@@ -383,17 +414,11 @@ html {
         flex-wrap: wrap;
         }
     .main__sect_services {
+        justify-content: flex-start;
         width: 100%;
         flex-wrap: wrap;
         margin-right: 2vw;
     }
-}
-
-.hr {
-    border: none;
-    width: 100%;
-    height: 5px;
-    margin: 0px auto;
 }
 
 .container_provide {
@@ -421,6 +446,13 @@ html {
     margin-top: 29px;
     text-align: center;
     max-width: 537px;
+}
+
+.hr {
+    border: none;
+    width: 100%;
+    height: 5px;
+    margin: 0px auto;
 }
 
 .hr_products {
