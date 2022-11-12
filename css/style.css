@@ -422,9 +422,10 @@ html {
     }
 }
 
-.container_provide {
+.container_products {
     background-color: #ffffff;
     min-width: 350px;
+    min-height: 930px;
 }
 
 .header_products {
@@ -450,11 +451,11 @@ html {
     line-height: 1;
     letter-spacing: 0.3834px;
     text-align: center;
+    margin-bottom: 27px;
 }
 
 .text_products {
     margin: 0 auto;
-    margin-top: 27px;
     text-align: center;
     max-width: 537px;
 }
@@ -549,4 +550,160 @@ html {
 
 .product__link:focus {
     box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
+}
+
+.container_team {
+    background-color: #ffffff;
+    min-width: 350px;
+    min-height: 730px;
+}
+
+.header_team {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 122px;
+    margin-bottom: 67px;
+    max-width: 1432px;
+}
+
+.header_team::after {
+    content: ' ';
+    display: block;
+    background:  #FF2D2D;
+    height: 2px;
+    width: 134px;
+    margin-top: 37px; 
+    margin-left: 4px;
+}
+
+.h2_team {
+    width: 100%;
+    line-height: 1;
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 35px;
+    letter-spacing: 0.3834px;
+}
+
+.header-text_team {
+    margin: 0px;
+    text-align: left;
+    max-width: 479px;
+    padding-left: 4px;
+}
+
+.team {
+    display: grid;
+    column-gap: 76px;
+    grid-template-columns: 324px auto;
+    grid-template-rows: 243px 217px;
+}
+
+.team__leader {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    height: 460px;
+    background-color: #FF3F40;
+}
+
+.team__photo {
+    object-fit: contain;
+    object-position: bottom;
+    background-color: #FF3F40;
+}
+
+.team__photo_leader {
+    width: 100%;
+    height: 460px;
+}
+
+.team__data_leader {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.h3__data_leader {
+    font-size: 30px;
+    letter-spacing: 0.28px;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.text__data_leader {
+    max-width: 663px;
+    margin-bottom: 46px;
+}
+
+.text__social {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.text__social > li {
+    box-sizing: content-box;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    margin-right: 33px;
+}
+
+.text__social a {
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    color: #000000;
+}
+
+.text__social > li :hover {
+    color:  #FF3F40;
+}
+
+.team__members {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    max-width: 857px;
+    gap: 18px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.team__photo_member {
+    position: relative;
+    width: 199px;
+    height: 217px; 
+}
+
+.team__name {
+    display: none;
+    content: 'sokina_jue';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    background: rgb(0, 0, 0,0.5);
+}
+
+.team__photo_member:hover > .team__name {
+    display: block;
 }
