@@ -585,7 +585,7 @@ html {
     letter-spacing: 0.3834px;
 }
 
-.header-text_team {
+.header__text_team {
     margin: 0px;
     text-align: left;
     max-width: 479px;
@@ -596,7 +596,7 @@ html {
     display: grid;
     column-gap: 76px;
     grid-template-columns: 324px auto;
-    grid-template-rows: 243px 217px;
+    grid-template-rows: 243px auto;
 }
 
 .team__leader {
@@ -706,4 +706,140 @@ html {
 
 .team__photo_member:hover > .team__name {
     display: block;
+}
+
+.container_subscribe {
+    position: relative;
+    min-height: 516px;
+    margin: 0 auto;
+    margin-top: 106px;
+}
+
+.container_subscribe::before {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    left: -20vw;
+    z-index: -2;
+    width: 120vw;
+    margin: 0px;
+    min-height: 516px;
+    background-color: #2C2C2C;
+}
+
+@media (max-width: 1200px) {
+    .container_subscribe::before {
+        height: 616px;
+    }
+}
+
+.header_subscribe {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 151px;
+    margin-bottom: 57px;
+}
+
+.h2_subscribe {
+    font-size: 42px;
+    line-height: 0.57;
+    text-align: center;
+    letter-spacing: 1.05px;
+    text-transform: none;
+    margin: 0px;
+    margin-bottom: 17px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1251px) {
+    .h2_subscribe {
+        line-height: 1.5;
+    }
+}
+
+.header__text_subscribe {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 19px;
+    margin: 0 auto;
+    margin-bottom: 141px;
+    width: 100%;
+}
+
+.subscribe__input {
+    flex-grow: 1;
+    max-width: 524px;
+    height: 82px;
+    border: none;
+    border-radius: 5px;
+    padding: 31px 0px 27px 38px;
+}
+
+.subscribe__input::placeholder {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    padding: 31px 0px 27px 38px;
+    color: #2C2C2C;
+}
+
+.subscribe__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 82px;
+        padding: 15px 15px;
+        width: 217px;
+        border-radius: 5px;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0px;
+        color: #ffffff;
+        background-color: #FF2D2D;
+        border-width: 0px;
+        text-decoration: none;
+        text-transform: uppercase;
+}
+
+.subscribe__button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.8);
+}
+
+.container_contact {
+    min-height: 771px;
+    margin: 0 auto;
+    margin-top: 104px;
+}
+
+.header_contact {
+    flex-direction: column;
+}
+
+.h2_contact {
+    margin-bottom: 46px;
+}
+
+.header__text_contact {
+    max-width: 753px;
+}
+
+.header_contact::after {
+    content: ' ';
+    display: block;
+    background:  #FF2D2D;
+    height: 2px;
+    width: 134px;
+    margin-top: 58px; 
+    margin-left: 1px;
 }
