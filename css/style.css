@@ -719,9 +719,9 @@ html {
     content: ' ';
     position: absolute;
     top: 0px;
-    left: -20vw;
+    left: -10vw;
     z-index: -2;
-    width: 120vw;
+    width: 120%;
     margin: 0px;
     min-height: 516px;
     background-color: #2C2C2C;
@@ -948,17 +948,11 @@ html {
     top: 0px;
     left: -81px;
     z-index: -2;
-    width: 580px;
+    width: 150%;
     margin: 0px;
     min-height: 485px;
     background-color: #2D2D2D;
 }
-
-/* @media (max-width: 1200px) {
-    .contact_info::before {
-        height: 616px;
-    }
-} */
 
 .h3_contact {
     margin: 0px;
