@@ -946,18 +946,6 @@ html {
     padding: 140px 0px 0px 81px;
 }
 
-.contacts::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0px;
-    transform: translateX(100%);
-    z-index: -2;
-    min-width: 20vw;
-    min-height: 100%;
-    background-color: #2D2D2D;
-}
-
 .h3_contact {
     margin: 0px;
     margin-bottom: 31px;
