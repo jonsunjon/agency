@@ -162,7 +162,7 @@ html {
 .intro_main {
     gap: 80px;
     min-height: 359px;
-    margin-top: 102px;
+    margin-top: 86px;
 }
 
 @media (max-width: 1200px) {
@@ -197,8 +197,7 @@ html {
 
 .h1_intro {
     margin: 0px;
-    margin-top: -16px;
-    margin-bottom: 37px;
+    margin-bottom: 16px;
 }
 
 .h1_intro > span {
@@ -207,14 +206,14 @@ html {
 
 @media (max-width: 550px) {
     .h1 {
-        font-size: 11.5vw;
+        font-size: 10.3vw;
     }
 }
 
 .p_intro {
     max-width: 545px;
     margin: 0px;
-    margin-bottom: 64px;
+    margin-bottom: 63px;
 }
 
 .button {
@@ -252,6 +251,7 @@ html {
     flex-shrink: 1;
     margin: 0px;
     padding: 0px;
+    padding-top: 16px;
 }
 
 .video {
@@ -263,6 +263,7 @@ html {
 
 .video_intro {
     max-width: 551px;
+    max-height: 359px;
 }
 
 @media (max-width: 1170px) {
