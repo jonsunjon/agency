@@ -632,13 +632,13 @@ html {
     font-size: 30px;
     letter-spacing: 0.28px;
     margin: 0;
-    margin-top: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .p_leader {
     max-width: 663px;
-    margin-bottom: 46px;
+    margin: 0;
+    margin-bottom: 38px;
 }
 
 .p_social {
@@ -839,6 +839,7 @@ html {
 }
 
 .contacts {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -846,6 +847,12 @@ html {
     margin: 0 auto;
     margin-bottom: 219px;
     width: 100%;
+}
+
+@media (max-width: 1150px) {
+    .contacts {
+        flex-wrap: wrap;
+    }
 }
 
 .contact__form {
@@ -904,27 +911,27 @@ html {
 }
 
 .contact__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 75px;
-        padding: 15px 15px;
-        width: 731px;
-        border-radius: 5px;
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-size: 18px;
-        font-weight: 700;
-        margin: 0px;
-        color: #ffffff;
-        background-color: #FF2D2D;
-        border-width: 0px;
-        text-decoration: none;
-        text-transform: uppercase;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    padding: 15px 15px;
+    width: 731px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+    color: #ffffff;
+    background-color: #FF2D2D;
+    border-width: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .contact__button:hover {
@@ -937,6 +944,18 @@ html {
     min-height: 485px;
     background-color: #2D2D2D;
     padding: 140px 0px 0px 81px;
+}
+
+.contacts::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0px;
+    transform: translateX(100%);
+    z-index: -2;
+    min-width: 20vw;
+    min-height: 100%;
+    background-color: #2D2D2D;
 }
 
 .h3_contact {
