@@ -333,7 +333,7 @@ html {
 .h2_provide {
     max-width: 523px;
     margin-top: -14px;
-    margin-bottom: 51px;
+    margin-bottom: 31px;
     line-height: 1.31;
     letter-spacing: 0.422159px;
 }
@@ -355,7 +355,6 @@ html {
 
 .main__sect_services {
     gap: 20px;
-    row-gap: 53px;
     box-sizing: content-box;
     justify-content: flex-start;
     align-content: flex-start;
@@ -365,6 +364,7 @@ html {
     max-width: 620px;
     min-height: 589px;
     margin: 0px;
+    margin-bottom: 31px;
     padding: 0px;
 }
 
@@ -398,8 +398,8 @@ html {
 
 .h3_service {
     margin: 0px;
-    margin-top: 31px;
-    margin-bottom: 13px;
+    margin-top: 13px;
+    margin-bottom: 0px;
 }
 
 .p_service {
