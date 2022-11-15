@@ -728,7 +728,7 @@ html {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    margin-top: 151px;
+    margin-top: 158px;
     margin-bottom: 57px;
 }
 
@@ -739,7 +739,7 @@ html {
     letter-spacing: 1.05px;
     text-transform: none;
     margin: 0px;
-    margin-bottom: 17px;
+    margin-bottom: 12px;
     color: #FFFFFF;
 }
 
@@ -752,6 +752,7 @@ html {
 .p_subscribe {
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .subscribe {
@@ -811,10 +812,10 @@ html {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 104px;
+    gap: 87px;
     min-height: 771px;
     margin: 0 auto;
-    margin-top: 104px;
+    margin-top: 84px;
     margin-bottom: 219px;
 }
 
@@ -823,11 +824,12 @@ html {
 }
 
 .h2_contact {
-    margin-bottom: 46px;
+    margin-bottom: 18px;
 }
 
 .p_contact {
     max-width: 753px;
+    margin: 0px;
 }
 
 .header_contact::after {
@@ -849,7 +851,7 @@ html {
     max-width: 753px;
     justify-content: flex-start;
     margin: 0 auto;
-    margin-left: -100px;
+    margin-left: -70px;
     width: 100%;
 }
 
@@ -948,7 +950,7 @@ html {
     justify-content: flex-start;
     flex-grow: 1;
     flex-shrink: 1;
-    margin-top: 370px;
+    margin-top: 310px;
     background-color: #2D2D2D;
 }
 
