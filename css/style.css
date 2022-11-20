@@ -818,7 +818,7 @@ html {
     min-height: 771px;
     margin: 0 auto;
     margin-top: 84px;
-    margin-bottom: 219px;
+    margin-bottom: 107px;
 }
 
 .header_contact {
@@ -1042,6 +1042,13 @@ html {
     flex-grow: 0;
     flex-shrink: 0;
     max-width: 1251px; 
+}
+
+@media (max-width: 1200px) {
+    .container_credits {
+    padding: 0px 2vw 0px 2vw;
+    gap: 2vw ;
+    }
 }
 
 .copyright {
