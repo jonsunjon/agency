@@ -627,6 +627,7 @@ html {
 }
 
 .h3_leader {
+    width: 100%;
     font-size: 30px;
     letter-spacing: 0.28px;
     margin: 0;
@@ -634,6 +635,7 @@ html {
 }
 
 .p_leader {
+    width: 100%;
     max-width: 663px;
     margin: 0;
     margin-bottom: 38px;
@@ -641,6 +643,7 @@ html {
 
 .p_social {
     display: flex;
+    flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
 }
@@ -709,11 +712,17 @@ html {
     display: block;
 }
 
+@media (max-width: 850px ) {
+    .team {
+        column-gap: 2vw;
+    }
+    
+}
+
 .container_subscribe {
     margin: 0 auto;
     min-height: 516px;
-    padding-top: 158px;
-    padding-bottom: 141px;
+    padding: 158px 2vw 141px 2vw;
     background-color: #2C2C2C;
 }
 
@@ -862,7 +871,7 @@ html {
 .contact__input {
     flex-grow: 1;
     border: none;
-    padding: 31px 0px 27px 38px;
+    padding: 31px 38px 27px 38px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -870,7 +879,7 @@ html {
     max-width: 342px;
     height: 71px;
     border-radius: 5px;
-    padding: 22px 0px 23px 56px;
+    padding: 22px 56px 23px 56px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -881,7 +890,7 @@ html {
     max-width: 734px;
     height: 71px;
     border-radius: 5px;
-    padding: 22px 0px 23px 56px;
+    padding: 22px 56px 23px 56px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
@@ -964,8 +973,25 @@ html {
         flex-grow: 0;
         flex-shrink: 1;
     }
+    .contacts {
+        padding: 0 2vw;
+    }
     .right-contact {
         margin-top: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contacts {
+        margin-left: 0px;
+        padding: 0 2vw;
+    }
+}
+
+@media (max-width: 755px) {
+    .contact__form {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -988,4 +1014,33 @@ html {
 
 .p_tel {
     color: #FFFFFF;
+}
+
+.footer {
+    width: 100%;
+    min-height: 113px;
+    background-color: #313030;
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.container_credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 1251px; 
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 1.62;
+    color: #B8B8B8;
+}
+
+.icon {
+    margin: 0px;
+    margin-left: 18px;
+    padding: 0px;
 }
