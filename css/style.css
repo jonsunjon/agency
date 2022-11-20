@@ -856,6 +856,8 @@ html {
 
 .contact__form {
     display: flex;
+    flex-shrink: 1;
+    flex-basis: auto;
     justify-self: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -870,29 +872,30 @@ html {
 
 .contact__input {
     flex-grow: 1;
+    flex-shrink: 1;
     border: none;
-    padding: 31px 38px 27px 38px;
+    padding: 22px 56px 23px 56px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 .contact__input_name {
-    max-width: 342px;
+    max-width: 734px;
     height: 71px;
     border-radius: 5px;
-    padding: 22px 56px 23px 56px;
 }
 
 .contact__input_email {
     max-width: 734px;
     height: 71px;
     border-radius: 5px;
-    padding: 22px 56px 23px 56px;
 }
 
 .contact__input_message {
     resize: none;
+    width: 100%;
     max-width: 734px;
     height: 252px;
+    padding: 32px 53px 32px 53px;
 }
 
 .contact__input::placeholder {
@@ -900,8 +903,12 @@ html {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.4px;
-    padding: 22px 0px 23px 56px;
+    padding: 22px 56px 23px 56px;
     color: #000000;
+}
+
+.contact__input_message::placeholder {
+    padding: 32px 53px 32px 53px;
 }
 
 .contact__button {
@@ -910,7 +917,8 @@ html {
     justify-content: center;
     height: 75px;
     padding: 15px 15px;
-    width: 731px;
+    width: 100%;
+    max-width: 731px;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -946,26 +954,36 @@ html {
     grid-column-end: 6;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1150px) {
     .container_contact {
         padding-left: 2vw;
+    }
+    .contacts {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 60vw 2vw 1fr);
+        grid-template-rows: max-content;
+    }
+    .contact__form {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .right-contact {
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 }
 
 .contact_info {
+    width: 100%;
     max-width: 413px;
     min-height: 485px;
     padding: 140px 0px 0px 81px;
 }
 
-@media (max-width: 755px) {
-    .contact__form {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 .h3_contact {
+    width: 100%;
     margin: 0px;
     margin-bottom: 31px;
     text-transform: uppercase;
@@ -973,16 +991,19 @@ html {
 }
 
 .p_adres {
+    width: 100%;
     color: #FFFFFF;
     margin-bottom: 27px;
 }
 
 .p_email {
+    width: 100%;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
 
 .p_tel {
+    width: 100%;
     color: #FFFFFF;
 }
 
