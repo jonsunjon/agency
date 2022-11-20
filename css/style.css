@@ -191,6 +191,8 @@ html {
 
 .h1_intro > span {
     letter-spacing: 6px;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 @media (max-width: 1270px) {
@@ -205,12 +207,6 @@ html {
 @media (max-width: 850px) {
     .intro {
         flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 550px) {
-    .h1_intro {
-        word-break: break-all;
     }
 }
 
@@ -271,9 +267,6 @@ html {
 }
 
 @media (max-width: 1180px) {
-    .main__sect_right {
-        width: 100%;
-    }
     .video_intro {
         min-width: 350px;
         width: 100%;
@@ -403,15 +396,8 @@ html {
 
 @media (max-width: 1300px) {
     .main {
-        max-width: none;
-        width: 100%;
         padding: 0 2vw;
         padding-bottom: 106px;
-    }
-    .main_agency {
-        width: 100%;
-        flex-wrap: wrap;
-        padding: 0 2vw;
     }
     .container_provide {
         flex-wrap: wrap;
@@ -535,23 +521,26 @@ html {
 }
 
 .product__link {
+    flex-grow: 1;
+    flex-shrink: 0;
     width: 301px;
-    height: 293px;
+    height: 293px; 
+    max-width: calc((100% - 43px) / 3);
 }
 
 .product__item {
     width: 100%;
     object-fit: cover;
-    object-position: center;
-    width: 301px;
-    height: 293px;
+    object-position: 0 50%;
+    min-width: 301px;
+    min-height: 293px;
 }
 
-.product__link:hover {
+.product__link:hover > .product__item {
     box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 }
 
-.product__link:focus {
+.product__link:focus .product__item {
     box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -620,7 +609,8 @@ html {
 
 .team__photo_leader {
     width: 100%;
-    height: 460px;
+    min-width: 324px;
+    min-height: 460px;
 }
 
 .team__data_leader {
@@ -683,7 +673,7 @@ html {
     max-width: 857px;
     gap: 18px;
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -716,11 +706,27 @@ html {
     display: block;
 }
 
-@media (max-width: 850px ) {
+@media (max-width: 900px ) {
     .team {
-        column-gap: 2vw;
+        gap: 2vw;
+        column-gap: clamp(2vw, 5vw, 76px);
+        grid-template-columns: auto;
+        grid-template-rows: auto;
     }
-    
+    .team__leader {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .team__members {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 802px) {
+
 }
 
 .container_subscribe {
