@@ -966,7 +966,7 @@ html {
     width: 100%;
     max-width: 413px;
     min-height: 485px;
-    padding: 140px 0px 0px 81px;
+    padding: 140px 42px 42px 81px;
 }
 
 @media (max-width: 1150px) {
