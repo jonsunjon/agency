@@ -803,6 +803,12 @@ html {
     }
 }
 
+@media (max-width: 400px) {
+    .team {
+        column-gap: 0px;
+    }
+}
+
 .container_subscribe {
     margin: 0 auto;
     min-height: 516px;
@@ -1044,7 +1050,7 @@ html {
     padding: 140px 22px 42px 81px;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1270px) {
     .contacts {
         grid-template-columns: repeat(1, 60vw 2vw 1fr);
         grid-template-rows: max-content;
@@ -1066,18 +1072,23 @@ html {
 
 @media (max-width: 800px) {
     .contacts {
-        grid-template-columns: repeat(1, auto 2vw 1fr);
+        grid-template-columns: repeat(1, auto);
     }
     .header_contact {
         padding-right: 2vw;
     }
+    .left-contacts {
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
     .contact__form {
+        justify-self: center;
         margin-bottom: 60px;
         padding-right: 2vw;
     }
     .right-contact {
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
     }
@@ -1161,6 +1172,13 @@ html {
 
 .footer > div > .p_social {
     justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+    h1, h2 {
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
 }
 
 @keyframes popup__menu {
