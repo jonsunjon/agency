@@ -160,25 +160,26 @@ html {
 }
 
 @media (max-width: 800px) {
-    .popup__button {
-    display: flex; 
-    }
     .navigation {
-    display: flex; 
-    flex-direction: column;
-    position: relative;
+        display: flex; 
+        flex-direction: column;
+        position: relative;
+        padding-right: 0px;
+    }
+    .popup__button {
+        display: flex; 
     }
     .navigation__menu {
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.8);
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
     }
     .navigation__link {
-    display: flex;
-    width: 200px;
+        display: flex;
+        width: 200px;
     }
 }
 
@@ -765,6 +766,25 @@ html {
     display: block;
 }
 
+@media (max-width: 1300px ) {
+    .team {
+        gap: 2vw;
+        column-gap: clamp(2vw, 5vw, 76px);
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .team__members {
+        justify-self: center;
+        justify-content: space-between;
+        max-width: none;
+        width: 100%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
 @media (max-width: 900px ) {
     .team {
         gap: 2vw;
@@ -784,7 +804,13 @@ html {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 660px) {
+    .team {
+        column-gap: 0px;
+    }
+    .team__photo_leader {
+        height: 100%;
+    }
     .team__leader {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -793,11 +819,11 @@ html {
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 3;
     }
     .team__members {
         margin-top: 38px;
-        justify-content: center;
+        justify-content: space-around;
         grid-column-start: 2;
         grid-column-end: 3;
     }
@@ -830,7 +856,7 @@ html {
 
 .h2_subscribe {
     font-size: 42px;
-    line-height: 0.57;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 1.05px;
     text-transform: none;
