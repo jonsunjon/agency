@@ -1,7 +1,7 @@
 'use strict'
-let Popup = document.querySelector('.popup');
+let Popup = document.querySelector('.navigation');
 let PopupButton = document.querySelector('.popup__button');
-let PopupMenu = document.querySelector('.popup__menu');
+let PopupMenu = document.querySelector('.navigation__menu');
 
 PopupButton.addEventListener('click', Popup_visible);
 
