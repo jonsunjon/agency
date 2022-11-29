@@ -768,7 +768,7 @@ html {
 
 @media (max-width: 1300px ) {
     .team {
-        gap: 2vw;
+        gap: 76px;
         column-gap: clamp(2vw, 5vw, 76px);
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -787,20 +787,11 @@ html {
 
 @media (max-width: 900px ) {
     .team {
-        gap: 2vw;
-        column-gap: clamp(2vw, 5vw, 76px);
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        gap: 38px;
     }
     .team__leader {
         grid-row-start: 1;
         grid-row-end: 2;
-    }
-    .team__members {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
     }
 }
 
@@ -822,7 +813,6 @@ html {
         grid-column-end: 3;
     }
     .team__members {
-        margin-top: 38px;
         justify-content: space-around;
         grid-column-start: 2;
         grid-column-end: 3;
@@ -1209,13 +1199,13 @@ html {
 
 @keyframes popup__menu {
     0% {
-    transform: translateY(0px);
+    top: 20px;
     z-index: -2;
     opacity: 0.5;
     }
     100% {
     opacity: 1;
-    transform: translateY(25%);
+    top: 89px;
     z-index: 1;
     }
   }
@@ -1224,5 +1214,5 @@ html {
     display: flex;
     z-index: 2;
     animation: popup__menu 0.5s ease-in-out;
-    transform: translateY(25%);
+    top: 89px;
 }
