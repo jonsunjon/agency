@@ -1044,7 +1044,7 @@ html {
     padding: 140px 22px 42px 81px;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1180px) {
     .contacts {
         grid-template-columns: repeat(1, 60vw 2vw 1fr);
         grid-template-rows: max-content;
