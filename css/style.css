@@ -175,7 +175,7 @@ html {
         position: absolute;
         align-items: center;
         width: 200px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.85);
     }
     .navigation__link {
         display: flex;
@@ -266,6 +266,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     height: 55px;
     padding: 15px 15px;
     width: 227px;
@@ -274,6 +275,7 @@ html {
     font-style: normal;
     font-size: 18px;
     font-weight: 700;
+    
 }
 
 .button_intro {
@@ -385,6 +387,7 @@ html {
     background-color: #ffffff;
     border: 2px solid;
     border-color: #FF0000;
+    text-decoration: none;
 }
 
 .main__sect_services {
@@ -766,6 +769,10 @@ html {
     display: block;
 }
 
+.team__photo_member:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 1300px ) {
     .team {
         gap: 76px;
@@ -918,6 +925,11 @@ html {
     box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.8);
 }
 
+.subscribe__button:focus {
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width: 450px) {
     .subscribe {
         flex-wrap: wrap;
@@ -1038,6 +1050,11 @@ html {
 }
 
 .contact__button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3) inset;
+}
+
+.contact__button:focus {
     cursor: pointer;
     box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3) inset;
 }
@@ -1186,6 +1203,15 @@ html {
     margin-bottom: 18px;
 }
 
+.icon:hover > a > img {
+    filter: drop-shadow(0px 0px 5px #FFFF);
+}
+
+.icon:focus > a > img {
+    filter: drop-shadow(0px 0px 5px #FFFF);
+}
+
+
 .footer > div > .p_social {
     justify-content: flex-end;
 }
@@ -1199,13 +1225,13 @@ html {
 
 @keyframes popup__menu {
     0% {
-    top: 20px;
+    top: 50%;
     z-index: -2;
     opacity: 0.5;
     }
     100% {
     opacity: 1;
-    top: 89px;
+    top: 100%;
     z-index: 1;
     }
   }
@@ -1214,5 +1240,5 @@ html {
     display: flex;
     z-index: 2;
     animation: popup__menu 0.5s ease-in-out;
-    top: 89px;
+    top: 100%;
 }
