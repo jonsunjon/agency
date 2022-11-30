@@ -1241,6 +1241,14 @@ html {
     }
 }
 
+
+@media (max-width: 490px) {
+    .h1, .h2 {
+        font-size: max(2rem,9vw);
+    }
+}
+
+
 @keyframes popup__menu {
     0% {
     top: 50%;
