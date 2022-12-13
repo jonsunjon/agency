@@ -698,20 +698,114 @@ html {
     background-image: url('../img/man.svg');
 }
 
+.team__photo_mark::after {
+    display: none;
+    content: 'mark waugh';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(0, 0, 0,0.5);
+}
+
 .team__photo_sokina {
     background-image: url('../img/woman.svg');
+}
+
+.team__photo_sokina::after {
+    display: none;
+    content: 'sokina_jue';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(0, 0, 0,0.5);
 }
 
 .team__photo_steve {
     background-image: url('../img/man2.svg');
 }
 
+.team__photo_steve::after {
+    display: none;
+    content: 'steve jobs';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(0, 0, 0,0.5);
+}
+
 .team__photo_ada {
     background-image: url('../img/woman2.svg');
 }
 
+.team__photo_ada::after {
+    display: none;
+    content: 'ada lovelace';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(0, 0, 0,0.5);
+}
+
 .team__photo_bill {
     background-image: url('../img/man3.svg');
+}
+
+.team__photo_bill::after {
+    display: none;
+    content: 'bill gates';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(0, 0, 0,0.5);
+}
+
+.team__photo:hover::after {
+    display: block;
 }
 
 .team__data_leader {
@@ -789,7 +883,7 @@ html {
     height: 217px; 
 }
 
-.team__name {
+/* .team__name {
     display: none;
     content: 'sokina_jue';
     position: absolute;
@@ -809,7 +903,7 @@ html {
 
 .team__photo_member:hover > .team__name {
     display: block;
-}
+} */
 
 .team__photo_member:hover {
     cursor: pointer;
