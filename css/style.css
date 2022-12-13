@@ -702,15 +702,15 @@ html {
     background-image: url('../img/woman.svg');
 }
 
-.team__photo_name {
+.team__photo_steve {
     background-image: url('../img/man2.svg');
 }
 
-.team__photo_name2 {
+.team__photo_ada {
     background-image: url('../img/woman2.svg');
 }
 
-.team__photo_name3 {
+.team__photo_bill {
     background-image: url('../img/man3.svg');
 }
 
@@ -719,6 +719,10 @@ html {
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+.hide {
+    display: none;
 }
 
 .h3_leader {
