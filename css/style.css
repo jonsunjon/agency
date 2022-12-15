@@ -804,8 +804,56 @@ html {
     background: rgb(0, 0, 0,0.5);
 }
 
+.team__photo_pavel {
+    background-image: url('../img/man4.svg');
+}
+
+.team__photo_pavel::after {
+    display: none;
+    content: 'pavel durov';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(0, 0, 0,0.5);
+}
+
+.team__photo_ivan {
+    background-image: url('../img/man5.svg');
+}
+
+.team__photo_ivan::after {
+    display: none;
+    content: 'ivan';
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(0, 0, 0,0.5);
+}
+
 .team__photo:hover::after {
     display: block;
+}
+
+.team__photo:hover {
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
 }
 
 .team__data_leader {
@@ -865,12 +913,67 @@ html {
     color:  #FF3F40;
 }
 
+.slider {
+    max-width: 857px;
+    overflow: hidden;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+ }
+
+ .slide_nav {
+    position: relative;
+    bottom: 15px;
+    transform: translateX(46%);
+    display: flex;
+ }
+ 
+ .bar {
+    width: 30px;
+    height: 8px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #000;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+ }
+ 
+ .bar:hover {
+    opacity: 1;
+    transform:scale(1.1);
+ }
+
+ input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+ }
+ 
+ .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+ }
+ 
+ .slide {
+    width: 25%;
+    transition: all 0.6s ease;
+ }
+
+ #r1:checked ~ .s1 {
+    margin-left: 0;
+ }
+ 
+ #r2:checked ~ .s1 {
+    margin-left: -25%;
+ }
+
 .team__members {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-grow: 4;
     max-width: 857px;
-    gap: 18px;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -879,31 +982,10 @@ html {
 
 .team__photo_member {
     position: relative;
+    margin-right: 18px;
     width: 199px;
     height: 217px; 
 }
-
-/* .team__name {
-    display: none;
-    content: 'sokina_jue';
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    margin: 0px;
-    left: 0px;
-    z-index: 2;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 0.17px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: rgb(0, 0, 0,0.5);
-}
-
-.team__photo_member:hover > .team__name {
-    display: block;
-} */
 
 .team__photo_member:hover {
     cursor: pointer;
@@ -916,10 +998,15 @@ html {
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
-    .team__members {
-        justify-self: center;
-        justify-content: space-between;
+    .slider {
         max-width: none;
+        width: 100%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .team__members {
         width: 100%;
         grid-row-start: 3;
         grid-row-end: 4;
@@ -955,8 +1042,12 @@ html {
         grid-column-start: 2;
         grid-column-end: 3;
     }
+    .slider {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
     .team__members {
-        justify-content: space-around;
+        /* justify-content: space-around; */
         grid-column-start: 2;
         grid-column-end: 3;
     }
