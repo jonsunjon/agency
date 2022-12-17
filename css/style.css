@@ -974,10 +974,6 @@ html {
     flex-wrap: nowrap;
     flex-grow: 4;
     max-width: 857px;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
 
 .team__photo_member {
@@ -1000,13 +996,6 @@ html {
     }
     .slider {
         max-width: none;
-        width: 100%;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .team__members {
         width: 100%;
         grid-row-start: 3;
         grid-row-end: 4;
@@ -1043,11 +1032,6 @@ html {
         grid-column-end: 3;
     }
     .slider {
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    .team__members {
-        /* justify-content: space-around; */
         grid-column-start: 2;
         grid-column-end: 3;
     }
